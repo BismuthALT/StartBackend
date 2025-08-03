@@ -29,12 +29,44 @@ const TwoCirce = squareCirce(31)
 console.log(TwoCirce)
 
 
-function createHTMLElement(tag, id, text) {
-    const element = document.createElement(tag);
-    element.id = id;
-    element.innerText = text;
-    return element; 
+// function createHTMLElement(tag, id, text) {
+//     const element = document.createElement(tag);
+//     element.id = id;
+//     element.innerText = text;
+//     return element; 
+// }
+// const h1Element = createHTMLElement('h1','header1','prostotext');
+// console.log(h1Element)
+// document.body.append(h1Element)
+
+
+
+
+function logArgsToConsole() {
+    if (!arguments.length ) {
+        return;
+    }
+    for (let argument of arguments) {
+        console.log(argument);
+    }
+    console.log('Больше аргументов нету')
+
 }
-const h1Element = createHTMLElement('h1','header1','prostotext');
-console.log(h1Element)
-document.body.append(h1Element)
+logArgsToConsole()
+
+const sayBay = () =>{
+    console.log('Пока')
+}
+sayBay()
+
+
+// задачка про массивы
+const brokenLinks = ['vk','youtube','facebook']
+
+function fixLink(brokenLinks) {
+    for (let argument of arguments) {
+        argument = "Http://" + argument
+        console.log(argument)
+    }
+}
+fixLink()
